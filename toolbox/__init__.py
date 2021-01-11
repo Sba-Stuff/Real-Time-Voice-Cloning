@@ -11,7 +11,7 @@ import sys
 import torch
 import librosa
 from audioread.exceptions import NoBackendError
-
+from scipy.io.wavfile import write #Required For Saving Output Results (Added By Sba Stuff)
 # Use this directory structure for your datasets, or modify it to fit your needs
 recognized_datasets = [
     "LibriSpeech/dev-clean",
@@ -281,6 +281,9 @@ class Toolbox:
         # Play it
         wav = wav / np.abs(wav).max() * 0.97
         self.ui.play(wav, Synthesizer.sample_rate)
+        # Save it (Modified By Sba Stuff)
+        #Saver Code (Modified By Sba Stuff)
+        write("output.wav",Synthesizer.sample_rate,wav)
 
         # Name it (history displayed in combobox)
         # TODO better naming for the combobox items?
