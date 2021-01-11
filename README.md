@@ -1,4 +1,4 @@
-# Real-Time Voice Cloning
+# Real-Time Voice Cloning With Output Result Save Support
 This repository is an implementation of [Transfer Learning from Speaker Verification to
 Multispeaker Text-To-Speech Synthesis](https://arxiv.org/pdf/1806.04558.pdf) (SV2TTS) with a vocoder that works in real-time. Feel free to check [my thesis](https://matheo.uliege.be/handle/2268.2/6801) if you're curious or if you're looking for info I haven't documented. Mostly I would recommend giving a quick look to the figures beyond the introduction.
 
@@ -68,3 +68,6 @@ Note: Enabling GPU support is a lot of work. You will want to set this up if you
 This command installs additional GPU dependencies and recommended packages: `pip install -r requirements_gpu.txt`
 
 Additionally, you will need to ensure GPU drivers are properly installed and that your CUDA version matches your PyTorch and Tensorflow installations.
+
+### 7. Save Generated Output (Modified by Sba Stuff)
+The original tool is unable to save the results when you click on "Synthesize and Vocode" or "Vocode only". This code saves result as "output.wav" in the root directory. I hope you will like this minor effor. (Thanks.)
