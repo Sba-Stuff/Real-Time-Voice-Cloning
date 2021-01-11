@@ -73,4 +73,4 @@ This command installs additional GPU dependencies and recommended packages: `pip
 Additionally, you will need to ensure GPU drivers are properly installed and that your CUDA version matches your PyTorch and Tensorflow installations.
 
 ### 7. Save Generated Output (Modified by Sba Stuff)
-The original tool is unable to save the results when you click on "Synthesize and Vocode" or "Vocode only". This code saves result as "output.wav" in the root directory. I hope you will like this minor effor. (Thanks.)
+The original tool is unable to save the results when you click on "Synthesize and Vocode" or "Vocode only". This code saves result as "output.wav" in the root directory. I hope you will like this minor effort. (Thanks.)
